@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX Scouting App</title>
+</head>
+<body>
+    <h1>VEX Team Scouting Form</h1>
+    <form id="scoutingForm">
+        <label for="name">Person Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="teamId">Team ID Number:</label>
+        <input type="text" id="teamId" name="teamId" required><br><br>
+
+        <label for="drivetrain">Drivetrain Specs:</label>
+        <input type="text" id="drivetrain" name="drivetrain"><br><br>
+
+        <label for="scoringMethod">Scoring Method:</label>
+        <select id="scoringMethod" name="scoringMethod">
+            <option value="Neutral wall stake">Neutral wall stake</option>
+            <option value="Alliance wall stake">Alliance wall stake</option>
+            <option value="Mobile goals">Mobile goals</option>
+        </select><br><br>
+
+        <label for="climbType">Climb Type:</label>
+        <input type="text" id="climbType" name="climbType"><br><br>
+
+        <label for="climbActive">Is the Climb Active or Passive?</label>
+        <select id="climbActive" name="climbActive">
+            <option value="Active">Active</option>
+            <option value="Passive">Passive</option>
+        </select><br><br>
+
+        <label for="climbConsistency">Can They Climb Consistently?</label>
+        <input type="checkbox" id="climbConsistency" name="climbConsistency"><br><br>
+
+        <label for="mobileGoalMechanism">Type of Mobile Goal Mechanism:</label>
+        <input type="text" id="mobileGoalMechanism" name="mobileGoalMechanism"><br><br>
+
+        <label for="buildQuality">Build Quality:</label>
+        <input type="text" id="buildQuality" name="buildQuality"><br><br>
+
+        <label for="descore">Can They Descore?</label>
+        <input type="checkbox" id="descore" name="descore"><br><br>
+
+        <label for="underLadder">Can They Go Under the Ladder?</label>
+        <input type="checkbox" id="underLadder" name="underLadder"><br><br>
+
+        <label for="clamp">Do They Have a Clamp?</label>
+        <input type="checkbox" id="clamp" name="clamp"><br><br>
+
+        <label for="robotImage">Robot Image:</label>
+        <input type="file" id="robotImage" name="robotImage" accept="image/*"><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script src="scoutingApp.js"></script>
+</body>
+</html>
