@@ -10,7 +10,7 @@ async function submitForm() {
 
     // Send data to Google Sheets
     try {
-        const response = await fetch('AKfycbz19LHXKnRl0RrBNwupKt3jLZIqGma-iMjfFlsRXMoD', {
+        const response = await fetch(AKfycbz19LHXKnRl0RrBNwupKt3jLZIqGma-iMjfFlsRXMoD, {
             method: 'POST',
             mode: 'no-cors', // Needed for Google Apps Script
             headers: {
